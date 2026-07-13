@@ -118,6 +118,9 @@ public class Main {
                 " [ID:" + habilidade.getId() + "] "
                 + habilidade.getNome()
         );
+        System.out.println(
+                espaco + "    Professor: " + habilidade.getProfessor()
+        );
 
 
         if (habilidade.getPai() == null) {

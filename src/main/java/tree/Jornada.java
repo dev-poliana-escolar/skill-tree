@@ -5,12 +5,11 @@ public class Jornada {
 
     public Habilidade criarArvore() {
 
-
         // Raiz da árvore
         Habilidade raiz = new Habilidade(
                 1,
                 "Ingressar no IFRN",
-                "Instituição",
+                "Instituicao",
                 "O aluno finalmente descobriu onde fica a sala de aula. A aventura começa."
         );
 
@@ -19,16 +18,16 @@ public class Jornada {
         Habilidade cafeinado = new Habilidade(
                 2,
                 "O Cafeinado",
-                "Trilha da Determinação",
-                "O café torna-se seu combustível oficial."
+                "Trilha da Determinacao",
+                "O café torna-se seu combustível oficial. Caminho da determinação."
         );
 
 
         Habilidade talentoso = new Habilidade(
                 3,
                 "O Talentoso",
-                "Trilha da Confiança",
-                "O aluno demonstra facilidade para aprender."
+                "Trilha da Confianca",
+                "O aluno demonstra facilidade para aprender. Caminho da confianca."
         );
 
 
@@ -37,27 +36,136 @@ public class Jornada {
                 4,
                 "Pensador Nato",
                 "Prof. Lucia",
-                "Desenvolve telepatia para prever perguntas da prova."
+                "Desenvolve telepatia para prever as perguntas da prova."
         );
 
 
         Habilidade oratoria = new Habilidade(
                 5,
-                "Oratória Perfeita",
+                "Oratoria Perfeita",
                 "Prof. Alexandre",
-                "Domina a arte da comunicação e apresentações."
+                "O aluno domina a arte da comunicacao. Aumenta o poder de apresentacoes e seminarios."
         );
 
 
+        // Terceiro nível - Ramo pensador nato
+        Habilidade andreza = new Habilidade(
+                6,
+                "Eu faco meu proprio estagio",
+                "Prof. Andreza",
+                "O aluno abre sua propria empresa e cria oportunidades em vez de procura-las."
+        );
 
-        // Criando os relacionamentos da árvore
-        
+
+        Habilidade daniel = new Habilidade(
+                7,
+                "Sem piscar",
+                "Prof. Daniel",
+                "Resolve desafios sem hesitar. O tempo de resolucao de problemas é reduzido."
+        );
+
+
+        // Terceiro nível - Ramo Oratoria
+        Habilidade valerio = new Habilidade(
+                8,
+                "Quase uma IA",
+                "Prof. Valerio",
+                "A inteligencia aumenta drasticamente, permitindo analisar problemas complexos em segundos."
+        );
+
+
+        Habilidade marcelao = new Habilidade(
+                9,
+                "Eu nao preciso disso",
+                "Prof. Marcelao",
+                "Todo conhecimento adquirido torna-se mais eficiente. Todas as habilidades recebem +2 de nivel."
+        );
+
+        Habilidade jurandy = new Habilidade(
+                10,
+                "Eu sou a velocidade",
+                "Prof. Jurandy",
+                "Patins academicos aumentam a velocidade de locomocao pelo campus."
+        );
+
+        Habilidade givas = new Habilidade(
+                11,
+                "O mago",
+                "Prof. Givas",
+                "Tarefas do cotidiano parecem muito mais faceis gracas ao dominio da logica."
+        );
+
+
+        // Terceiro nível - Ramo Jurandy
+
+        Habilidade diego = new Habilidade(
+                12,
+                "Presenca onipresente",
+                "Prof. Diego",
+                "Uma vez a cada duas semanas, sua presenca e registrada mesmo sem comparecer a sala."
+        );
+
+        Habilidade tadeu = new Habilidade(
+                13,
+                "Como um computador",
+                "Prof. Tadeu",
+                "O aluno processa varias tarefas ao mesmo tempo, aumentando drasticamente sua eficiencia."
+        );
+
+
+        // Terceiro nível - Ramo Givas
+
+        Habilidade higor = new Habilidade(
+                14,
+                "Nada me afeta",
+                "Prof. Higor",
+                "O aluno torna-se imune aos efeitos da preguica e da procrastinacao."
+        );
+
+        Habilidade marcelinho = new Habilidade(
+                15,
+                "Banco vivo",
+                "Prof. Marcelinho",
+                "Todo conhecimento adquirido e armazenado permanentemente."
+        );
+
+
+        // Ligações da árvore
+
+        cafeinado.adicionarFilho(jurandy);
+        cafeinado.adicionarFilho(givas);
+
+        jurandy.adicionarFilho(diego);
+        jurandy.adicionarFilho(tadeu);
+
+        givas.adicionarFilho(higor);
+        givas.adicionarFilho(marcelinho);
+
+
+
+        // Criando os relacionamentos da árvore 
+
         raiz.adicionarFilho(cafeinado);
         raiz.adicionarFilho(talentoso);
 
         talentoso.adicionarFilho(pensador);
         talentoso.adicionarFilho(oratoria);
+        
+        // Bloco 1 
 
+        pensador.adicionarFilho(andreza);
+        pensador.adicionarFilho(daniel);
+
+        oratoria.adicionarFilho(valerio);
+        oratoria.adicionarFilho(marcelao);
+
+
+        // A raiz começa desbloqueada
+        raiz.desbloquear();
+
+
+        // Bloco 2: Habilidade (Jurandy, Diego, Tadeu, Givas, Higor, Marcelinho)
+        
 
 
         return raiz;
