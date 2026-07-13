@@ -81,6 +81,66 @@ public class Jornada {
                 "Todo conhecimento adquirido torna-se mais eficiente. Todas as habilidades recebem +2 de nivel."
         );
 
+        Habilidade jurandy = new Habilidade(
+                10,
+                "Eu sou a velocidade",
+                "Prof. Jurandy",
+                "Patins academicos aumentam a velocidade de locomocao pelo campus."
+        );
+
+        Habilidade givas = new Habilidade(
+                11,
+                "O mago",
+                "Prof. Givas",
+                "Tarefas do cotidiano parecem muito mais faceis gracas ao dominio da logica."
+        );
+
+
+        // Terceiro nível - Ramo Jurandy
+
+        Habilidade diego = new Habilidade(
+                12,
+                "Presenca onipresente",
+                "Prof. Diego",
+                "Uma vez a cada duas semanas, sua presenca e registrada mesmo sem comparecer a sala."
+        );
+
+        Habilidade tadeu = new Habilidade(
+                13,
+                "Como um computador",
+                "Prof. Tadeu",
+                "O aluno processa varias tarefas ao mesmo tempo, aumentando drasticamente sua eficiencia."
+        );
+
+
+        // Terceiro nível - Ramo Givas
+
+        Habilidade higor = new Habilidade(
+                14,
+                "Nada me afeta",
+                "Prof. Higor",
+                "O aluno torna-se imune aos efeitos da preguica e da procrastinacao."
+        );
+
+        Habilidade marcelinho = new Habilidade(
+                15,
+                "Banco vivo",
+                "Prof. Marcelinho",
+                "Todo conhecimento adquirido e armazenado permanentemente."
+        );
+
+
+        // Ligações da árvore
+
+        cafeinado.adicionarFilho(jurandy);
+        cafeinado.adicionarFilho(givas);
+
+        jurandy.adicionarFilho(diego);
+        jurandy.adicionarFilho(tadeu);
+
+        givas.adicionarFilho(higor);
+        givas.adicionarFilho(marcelinho);
+
 
 
         // Criando os relacionamentos da árvore 
