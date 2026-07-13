@@ -9,7 +9,7 @@ public class Jornada {
         Habilidade raiz = new Habilidade(
                 1,
                 "Ingressar no IFRN",
-                "Instituição",
+                "Instituicao",
                 "O aluno finalmente descobriu onde fica a sala de aula. A aventura começa."
         );
 
@@ -18,7 +18,7 @@ public class Jornada {
         Habilidade cafeinado = new Habilidade(
                 2,
                 "O Cafeinado",
-                "Trilha da Determinação",
+                "Trilha da Determinacao",
                 "O café torna-se seu combustível oficial. Caminho da determinação."
         );
 
@@ -26,8 +26,8 @@ public class Jornada {
         Habilidade talentoso = new Habilidade(
                 3,
                 "O Talentoso",
-                "Trilha da Confiança",
-                "O aluno demonstra facilidade para aprender. Caminho da confiança."
+                "Trilha da Confianca",
+                "O aluno demonstra facilidade para aprender. Caminho da confianca."
         );
 
 
@@ -42,43 +42,43 @@ public class Jornada {
 
         Habilidade oratoria = new Habilidade(
                 5,
-                "Oratória Perfeita",
+                "Oratoria Perfeita",
                 "Prof. Alexandre",
-                "O aluno domina a arte da comunicação. Aumenta o poder de apresentações e seminários."
+                "O aluno domina a arte da comunicacao. Aumenta o poder de apresentacoes e seminarios."
         );
 
 
-        // Terceiro nível - Ramo Lucia
+        // Terceiro nível - Ramo pensador nato
         Habilidade andreza = new Habilidade(
                 6,
-                "Andreza",
-                "Prof. Lucia",
-                "O aluno abre sua própria empresa e cria oportunidades em vez de procurá-las."
+                "Eu faco meu proprio estagio",
+                "Prof. Andreza",
+                "O aluno abre sua propria empresa e cria oportunidades em vez de procura-las."
         );
 
 
         Habilidade daniel = new Habilidade(
                 7,
-                "Daniel",
-                "Prof. Lucia",
-                "Resolve desafios sem hesitar. O tempo de resolução de problemas é reduzido."
+                "Sem piscar",
+                "Prof. Daniel",
+                "Resolve desafios sem hesitar. O tempo de resolucao de problemas é reduzido."
         );
 
 
-        // Terceiro nível - Ramo Alexandre
+        // Terceiro nível - Ramo Oratoria
         Habilidade valerio = new Habilidade(
                 8,
-                "Valerio",
-                "Prof. Alexandre",
-                "A inteligência aumenta drasticamente, permitindo analisar problemas complexos em segundos."
+                "Quase uma IA",
+                "Prof. Valerio",
+                "A inteligencia aumenta drasticamente, permitindo analisar problemas complexos em segundos."
         );
 
 
         Habilidade marcelao = new Habilidade(
                 9,
-                "Marcelão",
-                "Prof. Alexandre",
-                "Todo conhecimento adquirido torna-se mais eficiente. Todas as habilidades recebem +2 de nível."
+                "Eu nao preciso disso",
+                "Prof. Marcelao",
+                "Todo conhecimento adquirido torna-se mais eficiente. Todas as habilidades recebem +2 de nivel."
         );
 
 
