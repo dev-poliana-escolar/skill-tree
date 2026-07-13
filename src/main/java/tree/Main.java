@@ -20,7 +20,7 @@ public class Main {
 
         do {
 
-            System.out.println("\n=== ÁRVORE DE HABILIDADES ===\n");
+            System.out.println("\n=== ARVORE DE HABILIDADES ===\n");
 
             exibirArvore(raiz, 0);
 
@@ -59,7 +59,7 @@ public class Main {
                     } else {
 
                         System.out.println(
-                            "Não é possível desbloquear. "
+                            "Nao foi possivel desbloquear. "
                             + "Desbloqueie primeiro: "
                             + habilidade.getPai().getNome()
                         );
