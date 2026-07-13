@@ -10,7 +10,7 @@ public class Jornada {
                 1,
                 "Ingressar no IFRN",
                 "Instituicao",
-                "O aluno finalmente descobriu onde fica a sala de aula. A aventura começa."
+                "O aluno finalmente descobriu onde fica a sala de aula. A aventura comeca."
         );
 
 
@@ -19,7 +19,7 @@ public class Jornada {
                 2,
                 "O Cafeinado",
                 "Trilha da Determinacao",
-                "O café torna-se seu combustível oficial. Caminho da determinação."
+                "O cafe torna-se seu combustivel oficial. Caminho da determinacao."
         );
 
 
@@ -130,8 +130,25 @@ public class Jornada {
         );
 
 
-        // Ligações da árvore
 
+        // Criando os relacionamentos da árvore 
+
+        raiz.adicionarFilho(cafeinado);
+        raiz.adicionarFilho(talentoso);
+
+        talentoso.adicionarFilho(pensador);
+        talentoso.adicionarFilho(oratoria);
+        
+        // bloco 1 
+
+        pensador.adicionarFilho(andreza);
+        pensador.adicionarFilho(daniel);
+
+        oratoria.adicionarFilho(valerio);
+        oratoria.adicionarFilho(marcelao);
+        
+        // bloco 2 
+        
         cafeinado.adicionarFilho(jurandy);
         cafeinado.adicionarFilho(givas);
 
@@ -142,29 +159,9 @@ public class Jornada {
         givas.adicionarFilho(marcelinho);
 
 
-
-        // Criando os relacionamentos da árvore 
-
-        raiz.adicionarFilho(cafeinado);
-        raiz.adicionarFilho(talentoso);
-
-        talentoso.adicionarFilho(pensador);
-        talentoso.adicionarFilho(oratoria);
-        
-        // Bloco 1 
-
-        pensador.adicionarFilho(andreza);
-        pensador.adicionarFilho(daniel);
-
-        oratoria.adicionarFilho(valerio);
-        oratoria.adicionarFilho(marcelao);
-
-
         // A raiz começa desbloqueada
         raiz.desbloquear();
 
-
-        // Bloco 2: Habilidade (Jurandy, Diego, Tadeu, Givas, Higor, Marcelinho)
         
 
 
